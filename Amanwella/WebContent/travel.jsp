@@ -27,7 +27,7 @@
 			</p>
 		</div>
 		<div class="headTitle">
-			<h2>Popular destinations in 2019</h2>
+			<h2>Popular destinations in 2020</h2>
 		</div>
 		<div class="main_img_location_div">
 			<div class="img_location">
