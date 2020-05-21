@@ -106,7 +106,8 @@ $(document).ready(function(){
         <li class="form-line" data-type="control_textbox" id="id_18">
         	<label class="form-label form-label-left form-label-auto" id="label_18" for="input_18">Date Of Birth </label>
         		<div id="cid_18" class="form-input">
-           			<input type="date" id="input_18" name="dob" required value="${staff.dob}" data-type="input-textbox" class="form-textbox" size="20" value="" placeholder= "Enter Date of Birth" data-component="textbox" aria-labelledby="label_18 " style="width: 250px " />
+           			<input type="date" id="input_18" name="dob" required value="${staff.dob}" data-type="input-textbox" 
+           			 min="1970-01-01" max="2000-01-01" class="form-textbox" size="20" value="" placeholder= "Enter Date of Birth" data-component="textbox" aria-labelledby="label_18 " style="width: 250px " />
         		</div>
         </li>
         
@@ -160,7 +161,25 @@ $(document).ready(function(){
 
 </form>
 </body>
+
+<script>var today = new Date();
+var dd = today.getDate();
+var mm = today.getMonth()+1; //January is 0!
+var yyyy = today.getFullYear();
+ if(dd<10){
+        dd='0'+dd
+    } 
+    if(mm<10){
+        mm='0'+mm
+    } 
+
+today = yyyy+'-'+mm+'-'+dd;
+document.getElementById("input_18").setAttribute("max", today);
+</script>
+
+
 <script> 
+
     function onlyNumberKey(evt) { 
           
         // Only ASCII charactar in that range allowed 

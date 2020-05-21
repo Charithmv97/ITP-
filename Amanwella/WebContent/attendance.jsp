@@ -97,7 +97,7 @@
       <li class="form-line form-line-column form-col-1 form-line-column-clear" data-type="control_button" id="id_2">
         <div id="cid_2" class="form-input-wide">
           <div style="text-align:center" data-align="center" class="form-buttons-wrapper ">
-            <button id="input_2" type="submit" class="form-submit-button form-submit-button-simple_black" data-component="button" data-content="">
+            <button onclick="alert('Successfully Add to the System...')" id="input_2" type="submit" class="form-submit-button form-submit-button-simple_black" data-component="button" data-content="">
               Submit
             </button>
             <span>

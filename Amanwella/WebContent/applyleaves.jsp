@@ -118,7 +118,8 @@ function leavescal(){
 	
 	if(leavescount >=5){
 		
-		alert("bhfdd");
+		alert("Maximum Number of leaves are 4");
+		document.getElementById("nleaves").value =0 ;
 	}else {
 		relevess = 4-leavescount;
 		document.getElementById("rleaves").value = relevess;
