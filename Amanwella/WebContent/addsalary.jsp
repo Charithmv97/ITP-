@@ -18,8 +18,15 @@
 	
     <!-- Main CSS-->
     <link href="css/salary.css" rel="stylesheet" media="all">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     
-
+<script>
+$(document).ready(function(){
+  $("form").submit(function(){
+    alert("Successfully Add to the System...");
+  });
+});
+</script>
     
 </head>
 
@@ -41,10 +48,10 @@
                                 <div class="row row-space">
                                     <div class="col-2">
                                         <div class="input-group-desc">
-											<select class="form-dropdown" name="memid" style="width: 250px "  >
+											<select class="form-dropdown" name="memid" style="width: 250px " required  >
 												<option value="Option 1"></option>
 												<c:forEach items="${list}" var="staff">
-           										<option value="${staff.id}">${staff.id}  </option>
+           										<option value="${staff.id}" >${staff.id}  </option>
 												</c:forEach>
 											</select>
                                         </div>
@@ -105,7 +112,7 @@
                         </div>
                        
                         <div>
-                            <button class="btn btn--radius-2 btn--red" type="submit" onclick="alert('Successfully Add to the System...')">ADD</button>
+                            <button class="btn btn--radius-2 btn--red" type="submit" >ADD</button>
                         </div>
                     </form>
                 </div>

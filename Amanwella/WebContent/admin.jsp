@@ -22,7 +22,13 @@
     <link rel="stylesheet" href="css/admin.css" />
   </head>
 
-  <body style="background-color:#f2f2f2;">
+  <body style="background-image: url('img/IMG_9825.JPG');
+			background-repeat: no-repeat;
+  			background-attachment: fixed;
+  			height: 500px; 
+  			background-position: center; 
+ 			background-repeat: no-repeat; 
+  			background-size: cover;">
   
   	<%
 	  	String email = (String)session.getAttribute("email");
@@ -37,7 +43,7 @@
     <div class="pusher">
       <div class="main-content">
         <div class="ui grid stackable padded">
-          <div
+          <!-- <div
             class="four wide computer eight wide tablet sixteen wide mobile column"
           >
             <div class="ui fluid card">
@@ -60,17 +66,65 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
+          <!-- <div
+            class="four wide computer eight wide tablet sixteen wide mobile column"
+          >
+            <div class="ui fluid card">
+              <div class="content">
+                <div class="ui right floated header red">
+                  <i class="fas fa-people-carry"></i>
+                </div>
+                <div class="header">
+                  <div class="ui red header">
+                  </div>
+                </div>
+                <div class="meta">
+                </div>
+                <div class="description">
+                </div>
+              </div>
+              <div class="extra content">
+                <div class="ui two buttons">
+                 <a href="staff_servlet"><div class="ui green button">Staff Management</div></a>
+                </div>
+              </div>
+            </div>
+          </div> -->
+          <!-- <div
+            class="four wide computer eight wide tablet sixteen wide mobile column"
+          >
+            <div class="ui fluid card">
+              <div class="content">
+                <div class="ui right floated header red">
+                  <i class="fas fa-people-carry"></i>
+                </div>
+                <div class="header">
+                  <div class="ui red header">
+                  </div>
+                </div>
+                <div class="meta">
+                </div>
+                <div class="description">
+                </div>
+              </div>
+              <div class="extra content">
+                <div class="ui two buttons">
+                  <a href="supplier_index.jsp"><div class="ui red button">Supplier Management</div></a>
+                </div>
+              </div>
+            </div>
+          </div> -->
           <div
             class="four wide computer eight wide tablet sixteen wide mobile column"
           >
             <div class="ui fluid card">
               <div class="content">
-                <div class="ui right floated header green">
-                  <i class="icon clock"></i>
+                <div class="ui right floated header teal">
+                  <i class="icon briefcase"></i>
                 </div>
                 <div class="header">
-                  <div class="ui header green"></div>
+                 
                 </div>
                 <div class="meta">
                   
@@ -81,65 +135,197 @@
               </div>
               <div class="extra content">
                 <div class="ui two buttons">
-                 <a href="staff_servlet"><div class="ui green button">Staff Management</div></a>
+                  <a href="supplier_index.jsp"><div class="ui red button" style="color:white;">Supplier Management</div></a>
                 </div>
               </div>
             </div>
           </div>
-          
+          <div
+            class="four wide computer eight wide tablet sixteen wide mobile column"
+          >
+            <div class="ui fluid card">
+              <div class="content">
+                <div class="ui right floated header teal">
+                  <i class="icon briefcase"></i>
+                </div>
+                <div class="header">
+                 
+                </div>
+                <div class="meta">
+                  
+                </div>
+                <div class="description">
+                  
+                </div>
+              </div>
+              <div class="extra content">
+                <div class="ui two buttons">
+                  <a href="staff_servlet">t<div class="ui green button">Staff Management</div></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="four wide computer eight wide tablet sixteen wide mobile column"
+          >
+            <div class="ui fluid card">
+              <div class="content">
+                <div class="ui right floated header teal">
+                  <i class="icon briefcase"></i>
+                </div>
+                <div class="header">
+                 
+                </div>
+                <div class="meta">
+                  
+                </div>
+                <div class="description">
+                  
+                </div>
+              </div>
+              <div class="extra content">
+                <div class="ui two buttons">
+                  <div class="ui teal button">Event Management</div>
+                </div>
+              </div>
+            </div>
+          </div>
 		  
-
-		
-        <div class="ui grid stackable padded">
-          <div
-            class="four wide computer eight wide tablet sixteen wide mobile  center aligned column"
+		  <div
+            class="four wide computer eight wide tablet sixteen wide mobile column"
           >
-            <div class="ui teal statistic">
-              <div class="value">
-                5,550
+            <div class="ui fluid card">
+              <div class="content">
+                <div class="ui right floated header green">
+                  <i class="icon clock"></i>
+                </div>
+                <div class="header">
+                  
+                </div>
+                <div class="meta">
+                  
+                </div>
+                <div class="description">
+                 
+                </div>
               </div>
-              <div class="label">
-                Downloads
+              <div class="extra content">
+                <div class="ui two buttons">
+                  <a href="contact_us"><div class="ui green button">Customer Feedback Management</div></a>
+                </div>
+              </div>
+            </div>
+          </div>
+		  
+		  <div
+            class="four wide computer eight wide tablet sixteen wide mobile column"
+          >
+            <div class="ui fluid card">
+              <div class="content">
+                <div class="ui right floated header red">
+                  <i class="icon shopping cart"></i>
+                </div>
+                <div class="header">
+                  <div class="ui red header">
+                    
+                  </div>
+                </div>
+                <div class="meta">
+                  
+                </div>
+                <div class="description">
+                  
+                </div>
+              </div>
+              <div class="extra content">
+                <div class="ui two buttons">
+                  <div class="ui two buttons" style="color:white;">
+                  <a href="res_sevlet"><div class="ui red button" >Room Reservation Management</div></a>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+		  
+		  
+		  <div
+            class="four wide computer eight wide tablet sixteen wide mobile column"
+          >
+            <div class="ui fluid card">
+              <div class="content">
+                <div class="ui right floated header green">
+                  <i class="icon clock"></i>
+                </div>
+                <div class="header">
+                  
+                </div>
+                <div class="meta">
+                  
+                </div>
+                <div class="description">
+                  
+                </div>
+              </div>
+              <div class="extra content">
+                <div class="ui two buttons">
+                  <a href="inventory_count"><div class="ui green button">Inventory Management</div></a>
+                </div>
+              </div>
+            </div>
+          </div>
+		  <div
+            class="four wide computer eight wide tablet sixteen wide mobile column"
+          >
+            <div class="ui fluid card">
+              <div class="content">
+                <div class="ui right floated header teal">
+                  <i class="icon briefcase"></i>
+                </div>
+                <div class="header">
+                  
+                </div>
+                <div class="meta">
+                  
+                </div>
+                <div class="description">
+                  
+                </div>
+              </div>
+              <div class="extra content">
+                <div class="ui two buttons">
+                  <div class="ui teal button">Transport Management</div>
+                </div>
               </div>
             </div>
           </div>
           <div
-            class="four wide computer eight wide tablet sixteen wide mobile  center aligned column"
+            class="four wide computer eight wide tablet sixteen wide mobile column"
           >
-            <div class="ui purple statistic">
-              <div class="value">
-                50+
+            <div class="ui fluid card">
+              <div class="content">
+                <div class="ui right floated header purple">
+                  <i class="icon trophy"></i>
+                </div>
+                <div class="header">
+                  
+                </div>
+                <div class="meta">
+                  
+                </div>
+                <div class="description">
+                  
+                </div>
               </div>
-              <div class="label">
-                Developers
-              </div>
-            </div>
-          </div>
-          <div
-            class="four wide computer eight wide tablet sixteen wide mobile  center aligned column"
-          >
-            <div class="ui green statistic">
-              <div class="value">
-                800+
-              </div>
-              <div class="label">
-                Commits
-              </div>
-            </div>
-          </div>
-          <div
-            class="four wide computer eight wide tablet sixteen wide mobile  center aligned column"
-          >
-            <div class="ui purple statistic">
-              <div class="value">
-                1000+
-              </div>
-              <div class="label">
-                Cups of Coffee
+              <div class="extra content">
+                <div class="ui two buttons">
+                  <div class="ui purple button">Restaurant Management</div>
+                </div>
               </div>
             </div>
           </div>
         </div>
+		
+        
       </div>
     </div>
 

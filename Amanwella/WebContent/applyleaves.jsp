@@ -18,6 +18,17 @@
 	
     <!-- Main CSS-->
     <link href="css/salary.css" rel="stylesheet" media="all">
+    
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+<script>
+$(document).ready(function(){
+  $("form").submit(function(){
+    alert("Successfully Add to the System...");
+  });
+});
+</script>
+    
 </head>
 
 <body>
@@ -97,7 +108,7 @@
  								<input type="hidden" id="rleaves" name="rleaves" required value="" data-type="input-textbox" class="form-textbox" size="25" value="" placeholder=" " data-component="textbox" aria-labelledby="label_3" />
 
                         <div>
-                            <button class="btn btn--radius-2 btn--red" type="submit" onclick="alert('Successfully Add to the System...')" >Apply Leave</button>
+                            <button class="btn btn--radius-2 btn--red" type="submit"  >Apply Leave</button>
                         </div>
                     </form>
                 </div>
